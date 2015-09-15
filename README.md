@@ -1,4 +1,4 @@
-# docker-drupal8
+# docker-cumulusclips
 
 Docker container for [Cumulus Clips web application][3]
 
