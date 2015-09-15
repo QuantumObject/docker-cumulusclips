@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y -q php5 \
                     libapache2-mod-php5 \
                     apache2 \
                     php5-mysql \
+                    php5-gd \
                     php5-curl \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
