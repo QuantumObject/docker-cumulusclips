@@ -12,12 +12,12 @@
  chown -R www-data:www-data /var/www/
 
 #required by cumulusclip site to be 777 but that is bad idea. 
- chmod -R 755 cc-core/logs
- chmod -R 755 cc-content/uploads/flv
- chmod -R 755 cc-content/uploads/mobile
- chmod -R 755 cc-content/uploads/temp
- chmod -R 755 cc-content/uploads/thumbs
- chmod -R 755 cc-content/uploads/avatars
+ chmod -R 775 cc-core/logs
+ chmod -R 775 cc-content/uploads/flv
+ chmod -R 775 cc-content/uploads/mobile
+ chmod -R 775 cc-content/uploads/temp
+ chmod -R 775 cc-content/uploads/thumbs
+ chmod -R 775 cc-content/uploads/avatars
  
  sed  -i 's/upload_max_filesize = 2M/upload_max_filesize = 350M/' /etc/php5/apache2/php.ini
  sed  -i 's/post_max_size = 8M/post_max_size = 350M/' /etc/php5/apache2/php.ini
