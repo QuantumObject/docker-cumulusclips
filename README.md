@@ -20,9 +20,9 @@ To install docker in Ubuntu 14.04 use the commands:
 ## If you need a MySQL database you can link container :
 
     $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword  -e MYSQL_DATABASE=cumulusclipsdb \
-    -e MYSQL_USER=cumulusclipsdbuser -e MYSQL_PASSWORD=cumulusclipsdbpasswd -d mysql
+    -e MYSQL_USER=cumulusclipsuser -e MYSQL_PASSWORD=cumulusclipsdbpasswd -d mysql
 
-in case you want to used pre-existing mysql container , you can add the new database by connecting to it with _docker exec -it some-mysql bash_ and manual adding cumulus clips database or you can link and used quantumobject/docker-mywebsql to create database cumulusclipsdb and user cumulusclipsdbuser plus need to grant all permision of this user to the cumulus clips database.  
+in case you want to used pre-existing mysql container , you can add the new database by connecting to it with _docker exec -it some-mysql bash_ and manual adding cumulus clips database or you can link and used quantumobject/docker-mywebsql to create database cumulusclipsdb and user cumulusclipsuser plus need to grant all permision of this user to the cumulus clips database.  
   
 Them link to Cumulus Clips container
 
@@ -40,7 +40,7 @@ This will create initial configuration where:
 
   - database : cumulusclipsdb
 
-  - database user : cumulusclipsdbuser
+  - database user : cumulusclipsuser
 
   - database password : cumulusclipsdbpasswd
 
