@@ -5,7 +5,7 @@
  wget http://cumulusclips.org/cumulusclips.tar.gz
  tar -zxvf cumulusclips.tar.gz
  rm cumulusclips.tar.gz
- mv cumulusclips/*  /var/www
+ mv cumulusclips/* cumulusclips/.htaccess /var/www
  rm -R cumulusclips
  
  cd /var/www
