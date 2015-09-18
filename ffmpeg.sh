@@ -12,6 +12,7 @@ apt-get update && apt-get install -y -q build-essential \
                               zlib1g-dev \
                               pkg-config \
                               libx264-dev \
+                              libfaac-dev \
                               netcat 
                               
 FFMPEG_VERSION=2.7.2
@@ -24,7 +25,7 @@ FFMPEG_VERSION=2.7.2
  fi
 
  cd "ffmpeg-${FFMPEG_VERSION}"
- ./configure --enable-version3 --enable-postproc --enable-libvorbis --enable-libvpx --enable-gpl --enable-libx264
+ ./configure --enable-version3 --enable-postproc --enable-libvorbis --enable-libvpx --enable-gpl --enable-libx264 --enable-nonfree --enable-libfdk-aac
  make
  checkinstall --pkgname=ffmpeg --pkgversion="5:${FFMPEG_VERSION}" --backup=no --deldoc=yes --default
 
