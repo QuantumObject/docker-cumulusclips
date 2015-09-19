@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt-get update && apt-get install -y -q build-essential \
+apt-add-repository multiverse && apt-get update && apt-get install -y -q build-essential \
                               git-core \
                               checkinstall \
                               yasm \
