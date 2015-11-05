@@ -61,8 +61,11 @@ About Cumulus Clips: [cumulusclips.org][1]
 
 To help improve this container [docker-cumulusclips][5]
 
+For additional info about us and our projects check our site [www.quantumobject.com][6]
+
 [1]:http://cumulusclips.org/
 [2]:https://www.docker.com
 [3]:http://cumulusclips.org/
 [4]:http://docs.docker.com
 [5]:https://github.com/QuantumObject/docker-cumulusclips
+[6]:http://www.quantumobject.com/
