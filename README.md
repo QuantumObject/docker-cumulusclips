@@ -8,7 +8,7 @@ Docker container for [Cumulus Clips web application][3]
 
   - [Docker][2]
 
-To install docker in Ubuntu 14.04 use the commands:
+To install docker in Ubuntu 15.04 use the commands:
 
     $ sudo apt-get update
     $ wget -qO- https://get.docker.com/ | sh
@@ -53,6 +53,7 @@ This will change some permission for some files internally of the container.
 To access the container from the server that the container is running :
 
     $ docker exec -it container_id /bin/bash
+    $ export TERM=xterm       #needed to execute some command correctly (nano,top)
 
 
 ## More Info
