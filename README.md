@@ -8,7 +8,7 @@ Docker container for [Cumulus Clips web application][3]
 
   - [Docker][2]
 
-To install docker in Ubuntu 15.04 use the commands:
+To install docker in Ubuntu 16.04 use the commands:
 
     $ sudo apt-get update
     $ wget -qO- https://get.docker.com/ | sh
@@ -44,11 +44,6 @@ This will create initial configuration where:
 
   - database password : cumulusclipsdbpasswd
 
-and after done with the final install at the web interface, need to run this command for security ..:
-
-    $ docker exec -it container_id after_install
-
-This will change some permission for some files internally of the container.
 
 To access the container from the server that the container is running :
 
