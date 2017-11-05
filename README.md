@@ -44,11 +44,6 @@ This will create initial configuration where:
 
   - database password : cumulusclipsdbpasswd
 
-and after done with the final install at the web interface, need to run this command for security ..:
-
-    $ docker exec -it container_id after_install
-
-This will change some permission for some files internally of the container.
 
 To access the container from the server that the container is running :
 
