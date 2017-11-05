@@ -25,9 +25,6 @@
  sed  -i 's/max_execution_time = 30/max_execution_time = 1500/' /etc/php/7.0/apache2/php.ini
  sed  -i 's/short_open_tag = Off/short_open_tag = On/' /etc/php/7.0/apache2/php.ini
  
- sed  -i "s#$pattern.*https.*#\$pattern = '/^https?:\\\/\\\/[a-z0-9][a-z0-9\\\.\\\-\\\:]+.*$/i';#" /var/www/cc-admin/settings.php
- sed  -i "s#$pattern.*https.*#\$pattern = '/^https?:\\\/\\\/[a-z0-9][a-z0-9\\\.\\\-\\\:]*[a-z0-9\\\/\\\_\\\.\\\-\\\:]*$/i';#" /var/www/cc-install/site-details.php
- 
  #to fix error relate to ip address of container apache2
  echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf
  ln -s /etc/apache2/conf-available/fqdn.conf /etc/apache2/conf-enabled/fqdn.conf
