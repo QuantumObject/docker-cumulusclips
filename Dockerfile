@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y -q php7.0 \
                     php7.0-mysql \
                     php7.0-gd \
                     php7.0-curl \
+                    php7.0-zip \
+                    php7.0-xml \
                     python \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
