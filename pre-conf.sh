@@ -19,10 +19,10 @@
  chmod -R 775 cc-content/uploads/thumbs
  chmod -R 775 cc-content/uploads/avatars
  
- sed  -i 's/upload_max_filesize = 2M/upload_max_filesize = 350M/' /etc/php5/apache2/php.ini
- sed  -i 's/post_max_size = 8M/post_max_size = 350M/' /etc/php5/apache2/php.ini
- sed  -i 's/max_execution_time = 30/max_execution_time = 1500/' /etc/php5/apache2/php.ini
- sed  -i 's/short_open_tag = Off/short_open_tag = On/' /etc/php5/apache2/php.ini
+ sed  -i 's/upload_max_filesize = 2M/upload_max_filesize = 350M/' /etc/php/7.0/apache2/php.ini
+ sed  -i 's/post_max_size = 8M/post_max_size = 350M/' /etc/php/7.0/apache2/php.ini
+ sed  -i 's/max_execution_time = 30/max_execution_time = 1500/' /etc/php/7.0/apache2/php.ini
+ sed  -i 's/short_open_tag = Off/short_open_tag = On/' /etc/php/7.0/apache2/php.ini
  
  sed  -i "s#$pattern.*https.*#\$pattern = '/^https?:\\\/\\\/[a-z0-9][a-z0-9\\\.\\\-\\\:]+.*$/i';#" /var/www/cc-admin/settings.php
  sed  -i "s#$pattern.*https.*#\$pattern = '/^https?:\\\/\\\/[a-z0-9][a-z0-9\\\.\\\-\\\:]*[a-z0-9\\\/\\\_\\\.\\\-\\\:]*$/i';#" /var/www/cc-install/site-details.php
