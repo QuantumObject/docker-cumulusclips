@@ -1,18 +1,18 @@
 #name of container: docker-cumulusclips
-#versison of container: 0.3.1
-FROM quantumobject/docker-baseimage:16.04
-MAINTAINER Angel Rodriguez  "angelrr7702@gmail.com"
+#versison of container: 0.3.2
+FROM quantumobject/docker-baseimage:18.04
+MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 #Update the container
 #Installation of nesesary package/software for this containers...
-RUN apt-get update && apt-get install -y -q php7.0 \
-                    libapache2-mod-php7.0 \
+RUN apt-get update && apt-get install -y -q php \
+                    libapache2-mod-php \
                     apache2 \
-                    php7.0-mysql \
-                    php7.0-gd \
-                    php7.0-curl \
-                    php7.0-zip \
-                    php7.0-xml \
+                    php-mysql \
+                    php-gd \
+                    php-curl \
+                    php-zip \
+                    php-xml \
                     python \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
