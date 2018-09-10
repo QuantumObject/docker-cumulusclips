@@ -5,7 +5,7 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 #Update the container
 #Installation of nesesary package/software for this containers...
-RUN apt-get update && apt-get install -y -q php \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q php \
                     libapache2-mod-php \
                     apache2 \
                     php-mysql \
