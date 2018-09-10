@@ -8,7 +8,7 @@ Docker container for [Cumulus Clips web application][3]
 
   - [Docker][2]
 
-To install docker in Ubuntu 16.04 use the commands:
+To install docker in Ubuntu 18.04 use the commands:
 
     $ sudo apt-get update
     $ wget -qO- https://get.docker.com/ | sh
@@ -20,7 +20,9 @@ To install docker in Ubuntu 16.04 use the commands:
 ## If you need a MySQL database you can link container :
 
     $ docker run --name cumulusclips-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword  -e MYSQL_DATABASE=cumulusclipsdb \
-    -e MYSQL_USER=cumulusclipsuser -e MYSQL_PASSWORD=cumulusclipsdbpasswd -d mysql
+    -e MYSQL_USER=cumulusclipsuser -e MYSQL_PASSWORD=cumulusclipsdbpasswd -d mysql:5.7
+    
+note: used old stable version of mysql 5.7 . It will fail with new version.
 
 in case you want to used pre-existing mysql container , you can add the new database by connecting to it with _docker exec -it some-mysql bash_ and manual adding cumulus clips database or you can link and used quantumobject/docker-mywebsql to create database cumulusclipsdb and user cumulusclipsuser plus need to grant all permision of this user to the cumulus clips database.  
   
