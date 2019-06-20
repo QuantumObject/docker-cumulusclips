@@ -1,5 +1,5 @@
 #name of container: docker-cumulusclips
-#versison of container: 0.3.2
+#versison of container: 0.3.3
 FROM quantumobject/docker-baseimage:18.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
