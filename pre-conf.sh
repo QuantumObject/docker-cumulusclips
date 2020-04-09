@@ -5,10 +5,10 @@
  wget http://cumulusclips.org/cumulusclips.tar.gz
  tar -zxvf cumulusclips.tar.gz
  rm cumulusclips.tar.gz
- cp -Rp cumulusclips/. /var/www
+ cp -Rp cumulusclips/. /var/www/
  
  cd /var/www
- chown -R www-data:www-data /var/www/
+ chown -R www-data:www-data /var/www
 
 #required by cumulusclip site to be 777 but that is bad idea. 
  chmod -R 750 cc-core/logs
