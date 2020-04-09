@@ -27,7 +27,7 @@ in case you want to used pre-existing mysql container , you can add the new data
   
 Them link to Cumulus Clips container
 
-    docker run -d -p 80:80 --link cumulusclips-mysql:db quantumobject/docker-cumulusclips 
+    docker run -d -p 80:80 --link cumulusclips-mysql:db --name cumulusclips quantumobject/docker-cumulusclips 
 
 where when been ask for database need to replace localhost for db.
 
