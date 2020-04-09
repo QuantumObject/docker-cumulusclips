@@ -4,7 +4,7 @@
 set -e
 #in case Volume are empty
 if [ "$(ls -A /var/www)" ]; then
-    echo "mysql folder with data"    
+    echo "/var/www folder with data"    
 else
     cp -Rp cumulusclips/. /var/www/
     chown -R www-data:www-data /var/www
