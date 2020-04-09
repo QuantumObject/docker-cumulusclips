@@ -6,14 +6,10 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 #Update the container
 #Installation of nesesary package/software for this containers...
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q --no-install-recommends php \
-                    libapache2-mod-php \
-                    apache2 \
-                    php-mysql \
-                    php-gd \
-                    php-curl \
-                    php-zip \
-                    php-xml \
-                    python \
+                    libapache2-mod-php php-posix \
+                    apache2  php-xml php-simplexml \
+                    php-mysql php-gd \
+                    php-curl php-zip python \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
