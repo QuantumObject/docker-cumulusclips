@@ -19,8 +19,7 @@ To install docker in Ubuntu 18.04 use the commands:
 
 ## If you need a MySQL database you can link container :
 
-    $ docker run --name cumulusclips-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword  -e MYSQL_DATABASE=cumulusclipsdb \
-    -e MYSQL_USER=cumulusclipsuser -e MYSQL_PASSWORD=cumulusclipsdbpasswd -d mysql:5.7
+    $ docker run --name cumulusclips-mysql -e MYSQL_DATABASE=cumulusclipsdb -e MYSQL_USER=cumulusclipsuser -e MYSQL_PASSWORD=cumulusclipsdbpasswd -d mysql:5.7
     
 note: used old stable version of mysql 5.7 . It will fail with new version.
 
